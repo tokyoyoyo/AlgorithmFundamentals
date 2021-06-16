@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlgorithmFundamentals.iml" filepath="$PROJECT_DIR$/AlgorithmFundamentals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinearTable/LinearTable.iml" filepath="$PROJECT_DIR$/LinearTable/LinearTable.iml" />
+    </modules>
+  </component>
+</project>
