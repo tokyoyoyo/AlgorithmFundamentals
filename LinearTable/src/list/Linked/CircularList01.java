@@ -37,6 +37,11 @@ class ListNode{
     //压制报错用的
     int val;
     ListNode next;
+
+    public ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
 }
 /*
 
