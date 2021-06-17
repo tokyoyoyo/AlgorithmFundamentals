@@ -1,3 +1,5 @@
+package com.jie.quickSort;
+
 import java.util.Arrays;
 
 public class Quicksort {
@@ -26,6 +28,7 @@ public class Quicksort {
     }
 
      public void quickSort(int low, int high) {
+        //递归的调用position方法完成排序
 
         if(low<high){
             int pos = position(low,high);
@@ -35,7 +38,7 @@ public class Quicksort {
     }
 
     private int position( int low ,int high ){
-
+        //将枢纽值放在应当的位置，并且将大于枢纽值的的放右边，小于的放左边
         int temp = array[low];
         int left = low;
         int right = high;
