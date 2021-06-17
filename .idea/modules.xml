@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AlgorithmFundamentals.iml" filepath="$PROJECT_DIR$/AlgorithmFundamentals.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinearTable/LinearTable.iml" filepath="$PROJECT_DIR$/LinearTable/LinearTable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sort/Sort.iml" filepath="$PROJECT_DIR$/Sort/Sort.iml" />
     </modules>
   </component>
 </project>
