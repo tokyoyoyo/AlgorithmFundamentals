@@ -1,5 +1,7 @@
 package list.Linked;
 
+import java.util.List;
+
 public class DeleteAllN {
 
         public ListNode removeElements(ListNode head, int val) {
