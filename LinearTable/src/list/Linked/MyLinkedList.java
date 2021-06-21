@@ -82,6 +82,7 @@ class LinkedNode{		//定义节点类
     private int val;
     private LinkedNode next;
 
+
     public int getVal() {
         return val;
     }
