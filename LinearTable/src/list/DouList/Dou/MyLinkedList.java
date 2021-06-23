@@ -86,38 +86,3 @@ public class MyLinkedList {
     }
 }
 
-class ListNode {
-    private int val;
-    private ListNode next;
-    private  ListNode front;
-
-    public ListNode(int val, ListNode front, ListNode next ) {
-        this.val = val;
-        this.next = next;
-        this.front = front;
-    }
-
-    public int getVal() {
-        return val;
-    }
-
-    public void setVal(int val) {
-        this.val = val;
-    }
-
-    public ListNode getNext() {
-        return next;
-    }
-
-    public void setNext(ListNode next) {
-        this.next = next;
-    }
-
-    public ListNode getFront() {
-        return front;
-    }
-
-    public void setFront(ListNode front) {
-        this.front = front;
-    }
-}
