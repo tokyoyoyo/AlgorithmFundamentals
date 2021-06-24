@@ -34,9 +34,6 @@ public class CircularList02 {
 
 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。注意，pos 仅仅是用于标识环的情况，并不会作为参数传递到函数中。
 
-作者：力扣 (LeetCode)
-链接：https://leetcode-cn.com/leetbook/read/linked-list/jjhf6/
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
 *
 * */

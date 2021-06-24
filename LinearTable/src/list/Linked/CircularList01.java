@@ -1,5 +1,7 @@
 package list.Linked;
 
+import list.DouList.Dou.ListNode;
+
 public class CircularList01 {
     /**
      * Definition for singly-linked list.
@@ -22,9 +24,9 @@ public class CircularList01 {
 
 //        非以上三种情况的话，快慢指针一定会相遇，相遇时返回true
 
-        while(faster != null && faster.next != null ){
-            faster = faster.next.next;
-            slower = slower.next;
+        while(faster != null && faster.getNext() != null ){
+            faster = faster.getNext().getNext();
+            slower = slower.getNext();
             if(slower == faster){
                 return true;
             }
@@ -33,16 +35,7 @@ public class CircularList01 {
     }
 }
 
-class ListNode{
-    //压制报错用的
-    int val;
-    ListNode next;
 
-    public ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
 /*
 
 https://leetcode-cn.com/leetbook/read/linked-list/jbex5/
