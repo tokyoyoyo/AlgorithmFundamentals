@@ -1,4 +1,4 @@
-package list.DouList;
+package list.DouList.flat;
 
 public class Node {
     public int val;

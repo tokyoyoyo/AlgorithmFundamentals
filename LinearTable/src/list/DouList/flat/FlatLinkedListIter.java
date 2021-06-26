@@ -1,4 +1,6 @@
-package list.DouList;
+package list.DouList.flat;
+
+import list.DouList.flat.Node;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

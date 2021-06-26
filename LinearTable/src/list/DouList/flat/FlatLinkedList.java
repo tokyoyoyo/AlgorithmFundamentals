@@ -1,4 +1,6 @@
-package list.DouList;
+package list.DouList.flat;
+
+import list.DouList.flat.Node;
 
 //扁平化多级双向链表：https://leetcode-cn.com/leetbook/read/linked-list/fw8v5/
 // 递归版
