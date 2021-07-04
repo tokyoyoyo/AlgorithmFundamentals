@@ -2,6 +2,8 @@ package com.que;
 
 import java.util.*;
 
+//https://leetcode-cn.com/leetbook/read/queue-stack/kj48j/
+
 public class TurntableLock {
     public int openLock(String[] deadends, String target) {
 
