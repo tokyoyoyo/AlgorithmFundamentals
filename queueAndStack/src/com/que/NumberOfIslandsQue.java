@@ -3,6 +3,9 @@ package com.que;
 
 import java.util.ArrayDeque;
 //BFS
+
+//https://leetcode-cn.com/leetbook/read/queue-stack/kbcqv/
+
 public class NumberOfIslandsQue {
     public int numIslands(char[][] grid) {
 
