@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
+//https://leetcode-cn.com/leetbook/read/queue-stack/kfgtt/
+
+
 public class PerfectSquare {
 
     public int numSquares(int n) {
