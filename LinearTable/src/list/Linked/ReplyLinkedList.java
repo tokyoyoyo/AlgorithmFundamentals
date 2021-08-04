@@ -1,5 +1,7 @@
 package list.Linked;
 
+
+
 public class ReplyLinkedList {
     public boolean isPalindrome(ListNode head) {
 

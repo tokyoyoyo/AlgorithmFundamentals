@@ -2,11 +2,11 @@ package list.Linked;
 
 public class MyLinkedList {
 
-    private LinkedNode head;
-    private LinkedNode tail;
+    private ListNode head;
+    private ListNode tail;
     /** Initialize your data structure here. */
     public MyLinkedList() {		//new一个节点，并让头引用尾引用都指向它
-        head = new LinkedNode();	//new一个节点，并让头引用指向它
+        head = new ListNode();	//new一个节点，并让头引用指向它
         tail = head;				//头引用赋值给尾引用
     }
 
@@ -16,7 +16,7 @@ public class MyLinkedList {
             return  -1;
         }
 
-        LinkedNode pointer = head;			//声明一个工作引用
+        ListNode pointer = head;			//声明一个工作引用
         for (int i = 0 ; i < index + 1 ; ++i ){	//index这里加1了，因为index从零开始，而头引用指向头节点，当index=0，工作引用要后移一位指向index为0的第一个元素，需要后移一位，思路类似于数组下标，工作引用一开始指向-1。
             pointer = pointer.getNext();
         }
@@ -25,7 +25,7 @@ public class MyLinkedList {
 
     /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
     public void addAtHead(int val) {
-        head.setNext(new LinkedNode(val,head.getNext()));	//初始化一个节点，赋值，
+        head.setNext(new ListNode(val,head.getNext()));	//初始化一个节点，赋值，
         //并让该节点引用指向第一个元素
         //然后让head引用指向该节点
         head.setVal(head.getVal()+1);			//元素总数+1
@@ -37,7 +37,7 @@ public class MyLinkedList {
 
     /** Append a node of value val to the last element of the linked list. */
     public void addAtTail(int val) {
-        tail.setNext(new LinkedNode(val));			//初始化节点并赋值，尾引用指向节点
+        tail.setNext(new ListNode(val));			//初始化节点并赋值，尾引用指向节点
         tail = tail.getNext();						//尾引用后移
 
         head.setVal(head.getVal()+1);			//元素总数+1
@@ -52,11 +52,11 @@ public class MyLinkedList {
         }else if(index > head.getVal()){
             //index  > 元素总数，什么也不做
         }else {										//index 在[ 1 , head.getval() - 1 ]时，找到对应的前驱并插入即可
-            LinkedNode pointer = head;				//新建工作引用并指向头节点
+            ListNode pointer = head;				//新建工作引用并指向头节点
             for(int i = 0 ; i < index ; ++i){		//相比get方法，工作引用不需要访问到被插入节点，只需要访问被插入结点的前驱，所以不需要加1
                 pointer = pointer.getNext();
             }
-            pointer.setNext(new LinkedNode(val,pointer.getNext()));
+            pointer.setNext(new ListNode(val,pointer.getNext()));
             head.setVal(head.getVal() + 1 );		//元素总数+1
         }
 
@@ -65,7 +65,7 @@ public class MyLinkedList {
     /** Delete the index-th node in the linked list, if the index is valid. */
     public void deleteAtIndex(int index) {
         if(index >= 0 && index < head.getVal() ){
-            LinkedNode pointer = head;
+            ListNode pointer = head;
             for (int i = 0 ; i < index ; ++i){			//与插入类似，工作引用只需要访问到被删除节点的前驱，所以index不需要+1
                 pointer = pointer.getNext();
             }
@@ -78,39 +78,7 @@ public class MyLinkedList {
     }
 }
 
-class LinkedNode{		//定义节点类
-    private int val;
-    private LinkedNode next;
 
-
-    public int getVal() {
-        return val;
-    }
-
-    public void setVal(int val) {
-        this.val = val;
-    }
-
-    public LinkedNode getNext() {
-        return next;
-    }
-
-    public void setNext(LinkedNode next) {
-        this.next = next;
-    }
-
-    public LinkedNode() {		//三个构造方法
-    }
-
-    public LinkedNode(int val) {
-        this.val = val;
-    }
-
-    public LinkedNode(int val, LinkedNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
 
 /**
  * Your MyLinkedList object will be instantiated and called as such:
