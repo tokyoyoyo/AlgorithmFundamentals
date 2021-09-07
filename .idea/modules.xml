@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/LinearTable/LinearTable.iml" filepath="$PROJECT_DIR$/LinearTable/LinearTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sort/Sort.iml" filepath="$PROJECT_DIR$/Sort/Sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tree/Tree.iml" filepath="$PROJECT_DIR$/Tree/Tree.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WrittenExamination/WrittenExamination.iml" filepath="$PROJECT_DIR$/WrittenExamination/WrittenExamination.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leet/leet.iml" filepath="$PROJECT_DIR$/leet/leet.iml" />
       <module fileurl="file://$PROJECT_DIR$/queueAndStack/queueAndStack.iml" filepath="$PROJECT_DIR$/queueAndStack/queueAndStack.iml" />
     </modules>
   </component>
