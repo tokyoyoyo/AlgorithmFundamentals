@@ -1,6 +1,9 @@
-package java.str;
+package Str;
 
 public class LRString {
+    public static void main(String[] args) {
+
+    }
     public int balancedStringSplit(String s) {
         char[] str = s.toCharArray();
         int count = 0;
